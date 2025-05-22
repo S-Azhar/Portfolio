@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <title>HTML</title>
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="both-side-padding">
+    <div class="Nav-list">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Resume</a>
+      <a href="#">Skills</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+  
+  
+  
+  <main>
+    <!-- Intro section-->
+    <section class="Intro-section both-side-padding">
+      <div class="Intro-Info">
+        <P class="Iam">I' m a</P>
+        <p class="secondline">Front-End<br>Web Developer<span class="dot">.</span></p>
+      </div>
+      
+      <div class="My-image">
+        <img id="random-image" />
+      </div>
+    </section>
+    
+    
+    <!-- About section-->
+    <section class="About both-side-padding">
+      <div>
+        <h1 class="about-Titel">About Me</h1>
+        
+        <div class="About-info">
+          <p>I want to express my gratitude to my teacher, Prof. L.S Shendge, for their encouragement, insightful suggestions, and mentorship. I’d also like to extend my thanks to Prof. S.V Swami, for granting me this wonderful opportunity to be part of this project.
+</p>
+        </div>
+      </div>
+      
+    </section>
+  </main>
+  
+  
+  
+  <!-- JavaScript -->
+  <script>
+    const images = [
+      "Public/Image's/Azhar Shaikh Primary.jpg",
+      "Public/Image's/Azhar Shaikh With Car.jpg",
+      "Public/Image's/Azhar Shaikh With Blue Sky.jpg",
+      "Public/Image's/Azhar Shaikh With Grase.jpg",
+      "Public/Image's/Azhar Shaikh With Tajmahal.jpg",
+      // Add more...
+    ];
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+    document.getElementById("random-image").src = randomImage;
+  </script>
+  <!-- Project -->
+  <script src="main.js"></script>
+</body>
+
+</html>

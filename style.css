@@ -1,0 +1,89 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background: #111731;
+    color: #fff;
+}
+
+a {
+    text-decoration: none;
+}
+
+.both-side-padding {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Nav-list {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.Nav-list a {
+    
+    font-size: 1.5rem;
+    padding-left: 3rem;
+    color: #fff;
+}
+
+/* Intro section Start */
+
+.Intro-section {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20%;
+    padding-bottom: 20%;
+}
+
+.Intro-Info {
+    width: 55%;
+}
+
+.Iam {
+    font-size: 2rem;
+    color: #A5A6B3F5;
+    font-weight: 900;
+    padding-top: 50px;
+}
+
+.secondline {
+    font-size: 4rem;
+    color: #fff;
+    font-weight: 900;
+}
+
+.dot {
+    line-height: 6px;
+    font-size: 100px;
+    font-weight: 900;
+    color: #47A0FFF5;
+}
+
+
+.My-image {
+    width: 45%;
+}
+
+img {
+    width: 90%;
+    border-radius: 25% 75% 41% 59% / 62% 32% 68% 38%;
+    transition: width 0.5s ease-in-out;
+}
+
+#random-image :hover {
+    width: 100%;
+}
+
+/* About Section Start */
+
+.about-Titel {
+    text-align: center;
+}
