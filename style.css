@@ -3,9 +3,15 @@
     padding: 0px;
 }
 
+html {
+    scroll-behavior: smooth;
+    /* To Make Smooth Scrolling Transition*/
+}
+
 body {
     background: #111731;
     color: #fff;
+    font-family: Oswald;
 }
 
 a {
@@ -18,6 +24,7 @@ a {
 }
 
 nav {
+    position: sticky;
     display: flex;
     justify-content: flex-end;
 }
@@ -28,9 +35,8 @@ nav {
 }
 
 .Nav-list a {
-    
     font-size: 1.5rem;
-    padding-left: 3rem;
+    margin-left: 3rem;
     color: #fff;
 }
 
@@ -58,6 +64,7 @@ nav {
     font-size: 4rem;
     color: #fff;
     font-weight: 900;
+    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
 }
 
 .dot {
@@ -86,4 +93,40 @@ img {
 
 .about-Titel {
     text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 786px) {
+    nav {
+        height: 3rem;
+        background: cadetblue;
+        justify-content: flex-start;
+    }
+    
+    .Nav-list{
+        
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center ;
+    }
+    
+    .Nav-list a {
+        font-size: 1rem;
+        margin-left : 0px 
+        
+        
+    }
 }
