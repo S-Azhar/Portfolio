@@ -45,8 +45,8 @@ nav {
 .Intro-section {
     display: flex;
     justify-content: space-between;
-    padding-top: 20%;
-    padding-bottom: 20%;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .Intro-Info {
@@ -64,7 +64,7 @@ nav {
     font-size: 4rem;
     color: #fff;
     font-weight: 900;
-    font-family: Book Antiqua,Palatino,Palatino Linotype,Palatino LT STD,Georgia,serif; 
+    font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
 }
 
 .dot {
@@ -79,7 +79,7 @@ nav {
     width: 45%;
 }
 
-img {
+.My-image img {
     width: 90%;
     border-radius: 25% 75% 41% 59% / 62% 32% 68% 38%;
     transition: width 0.5s ease-in-out;
@@ -91,8 +91,33 @@ img {
 
 /* About Section Start */
 
+.About {
+    background: #000B18;
+    display: flex;
+}
+
+.Animeted-gif {
+    width: 45%;
+    margin: 10% 0px;
+}
+
+.Animeted-gif img {
+    width: 100%;
+}
+
+.About-info{
+    width: 55%;
+    margin: auto 0px;
+    padding-left: 5%;
+}
+
 .about-Titel {
-    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 5%;
+}
+
+.about-paragraph {
+    font-size: 1rem;
 }
 
 
@@ -109,24 +134,16 @@ img {
 
 
 @media only screen and (max-width: 786px) {
-    nav {
-        height: 3rem;
-        background: cadetblue;
-        justify-content: flex-start;
-    }
     
-    .Nav-list{
-        
+    .Nav-list {
         width: 100%;
         display: flex;
         justify-content: space-between;
-        align-items: center ;
+        align-items: center;
     }
     
     .Nav-list a {
         font-size: 1rem;
-        margin-left : 0px 
-        
-        
+        margin-left: 0px
     }
 }
