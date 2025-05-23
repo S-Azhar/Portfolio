@@ -1,3 +1,13 @@
+@font-face {
+    font-family: Bespoke;
+    src: url(Public/Fonts/BespokeStencil-Variable.ttf);
+}
+
+@font-face {
+    font-family: Ranade;
+    src: url(Public/Fonts/Ranade-Regular.otf);
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -11,7 +21,7 @@ html {
 body {
     background: #111731;
     color: #fff;
-    font-family: Oswald;
+    font-family: Ranade;
 }
 
 a {
@@ -23,53 +33,64 @@ a {
     padding-left: 5%;
 }
 
+
+
+/* Navigation Section */
 nav {
-    position: sticky;
-    display: flex;
-    justify-content: flex-end;
+    width: 90%;
+    position: fixed;
+    background: #111731;
 }
 
 .Nav-list {
-    padding-top: 2%;
-    padding-bottom: 2%;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1%;
+    padding-bottom: 1%;
 }
 
 .Nav-list a {
     font-size: 1.5rem;
     margin-left: 3rem;
     color: #fff;
+    font-weight: 900;
 }
 
-/* Intro section Start */
 
+
+
+/* Home section Start */
 .Intro-section {
     display: flex;
     justify-content: space-between;
+    
     padding-top: 10%;
     padding-bottom: 10%;
 }
 
 .Intro-Info {
     width: 55%;
+    margin: auto 0px;
 }
 
 .Iam {
     font-size: 2rem;
     color: #A5A6B3F5;
-    font-weight: 900;
-    padding-top: 50px;
+    font-family: Bespoke;
+    font-weight: 500;
+    line-height: 5px;
 }
 
 .secondline {
     font-size: 4rem;
     color: #fff;
-    font-weight: 900;
-    font-family: Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
+    font-weight: 700;
+    font-family: Bespoke, Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
 }
 
 .dot {
     line-height: 6px;
-    font-size: 100px;
+    font-size: 5rem;
     font-weight: 900;
     color: #47A0FFF5;
 }
@@ -89,8 +110,10 @@ nav {
     width: 100%;
 }
 
-/* About Section Start */
 
+
+
+/* About Section Start */
 .About {
     background: #000B18;
     display: flex;
@@ -98,20 +121,21 @@ nav {
 
 .Animeted-gif {
     width: 45%;
-    margin: 10% 0px;
+    padding: 10% 0px;
 }
 
 .Animeted-gif img {
     width: 100%;
 }
 
-.About-info{
+.About-info {
     width: 55%;
     margin: auto 0px;
     padding-left: 5%;
 }
 
 .about-Titel {
+    font-family: Bespoke;
     font-size: 2rem;
     margin-bottom: 5%;
 }
@@ -135,15 +159,84 @@ nav {
 
 @media only screen and (max-width: 786px) {
     
+    
+    /* Nav Section */
     .Nav-list {
         width: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
     }
     
     .Nav-list a {
         font-size: 1rem;
         margin-left: 0px
+    }
+    
+    
+    
+    
+    
+    /* Home Section */
+    .Intro-section {
+        display: block;
+    }
+    
+    .Intro-Info {
+        width: 100%;
+        margin: 15% 0;
+    }
+    
+    .Iam {
+        font-size: 1.5rem;
+        font-weight: 900;
+    }
+    
+    .secondline {
+        font-size: 2.5rem;
+    }
+    
+    .My-image {
+        width: 100%;
+        padding: 15% 0;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .My-image img {
+        margin: 0px auto;
+    }
+    
+    .dot {
+        font-size: 3rem;
+    }
+    
+    
+    
+    
+    
+    /* About Section */
+    .About {
+        padding-top: 11%;
+        display: block;
+    }
+    
+    .Animeted-gif {
+        width: 100%;
+        display: flex;
+        justify-items: center;
+        padding-top: 0%;
+        
+    }
+    
+    .About-info {
+        width: 100%;
+        padding-left: 0px;
+    }
+    
+    .about-Titel {
+        text-align: center;
     }
 }
