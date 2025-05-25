@@ -1,8 +1,16 @@
+/* Colours
+    Grey         #5d637b
+    Background   #101630
+    Shadow       #4cb9dc
+    */
+
+/* Heading Font Style */
 @font-face {
     font-family: Bespoke;
     src: url(Public/Fonts/BespokeStencil-Variable.ttf);
 }
 
+/* Normal Font Style */
 @font-face {
     font-family: Ranade;
     src: url(Public/Fonts/Ranade-Regular.otf);
@@ -19,7 +27,7 @@ html {
 }
 
 body {
-    background: #111731;
+    background: #101630;
     color: #fff;
     font-family: Ranade;
 }
@@ -39,7 +47,8 @@ a {
 nav {
     width: 90%;
     position: fixed;
-    background: #111731;
+    box-shadow: 0 0 1.5rem #4cb9dc;
+    background: #101630;
 }
 
 .Nav-list {
@@ -56,6 +65,11 @@ nav {
     font-weight: 900;
 }
 
+#Nav-a:hover {
+    color: #4cb9dc;
+    filter: drop-shadow( 0 0 10px #4cb9dc);
+}
+
 
 
 
@@ -63,9 +77,8 @@ nav {
 .Intro-section {
     display: flex;
     justify-content: space-between;
-    
-    padding-top: 10%;
-    padding-bottom: 10%;
+    padding-top: 7%;
+    padding-bottom: 7%;
 }
 
 .Intro-Info {
@@ -74,40 +87,47 @@ nav {
 }
 
 .Iam {
-    font-size: 2rem;
-    color: #A5A6B3F5;
+    font-size: 1.25rem;
+    color: #5d637b;
     font-family: Bespoke;
     font-weight: 500;
     line-height: 5px;
 }
 
+.my-name{
+    font-family: Bespoke;
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
 .secondline {
-    font-size: 4rem;
+    font-size: 1.5rem;
     color: #fff;
     font-weight: 700;
     font-family: Bespoke, Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
-}
-
-.dot {
-    line-height: 6px;
-    font-size: 5rem;
-    font-weight: 900;
-    color: #47A0FFF5;
+    line-height: 5px;
+    text-decoration: underline 2px #4cb9dc;
 }
 
 
 .My-image {
     width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .My-image img {
     width: 90%;
+    height: 90%;
     border-radius: 25% 75% 41% 59% / 62% 32% 68% 38%;
     transition: width 0.5s ease-in-out;
+    filter: drop-shadow( 0 0 3rem #4cb9dc);
+    /* write 0, 0, to show shadow all side of img & elements*/
 }
 
-#random-image :hover {
-    width: 100%;
+#random-image:hover  {
+    border: 63% 37% 65% 35% / 32% 58% 42% 68% ;
 }
 
 
@@ -115,7 +135,7 @@ nav {
 
 /* About Section Start */
 .About {
-    background: #000B18;
+    background: #101630;
     display: flex;
 }
 
@@ -126,6 +146,8 @@ nav {
 
 .Animeted-gif img {
     width: 100%;
+    filter: drop-shadow( 0 0 1.5rem #4cb9dc);
+    border-radius: 5%;
 }
 
 .About-info {
@@ -143,6 +165,56 @@ nav {
 .about-paragraph {
     font-size: 1rem;
 }
+
+
+
+/* Skills Section Start */
+
+.skills-titel {
+    font-family: Bespoke;
+    font-size: 2rem;
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.Frontend {
+    display: flex;
+}
+
+.Frontend-Titel {
+    width: 50%;
+    font-family: Bespoke;
+    font-size: 3rem;
+}
+
+.Frontend-Skills {
+    width: 50%;
+    display: flex;
+}
+
+.skillimg {
+    width: 15%;
+    height: 15%;
+    margin: 0px auto;
+}
+
+.skillimg img {
+    width: 100%;
+}
+
+.CSSimg {
+    padding-top: 10%;
+}
+
+.JAVASCRIPTimg {
+    padding-top: 20%;
+}
+
+.BOOTSTRAPimg {
+    padding-top: 30%;
+}
+
+
 
 
 
@@ -182,6 +254,7 @@ nav {
     /* Home Section */
     .Intro-section {
         display: block;
+        padding-top: 12%;
     }
     
     .Intro-Info {
@@ -190,12 +263,18 @@ nav {
     }
     
     .Iam {
-        font-size: 1.5rem;
+        font-size: 1.25rem;
         font-weight: 900;
+        line-height: 7px;
+    }
+    
+    .my-name{
+        font-size: 2.75rem;
     }
     
     .secondline {
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 7px;
     }
     
     .My-image {
@@ -203,14 +282,6 @@ nav {
         padding: 15% 0;
         display: flex;
         justify-content: center;
-    }
-    
-    .My-image img {
-        margin: 0px auto;
-    }
-    
-    .dot {
-        font-size: 3rem;
     }
     
     
@@ -225,10 +296,14 @@ nav {
     
     .Animeted-gif {
         width: 100%;
-        display: flex;
-        justify-items: center;
+        margin: 0 auto;
         padding-top: 0%;
-        
+        display: flex;
+        justify-content: center;
+    }
+    
+    .Animeted-gif img {
+        width: 75%;
     }
     
     .About-info {
@@ -238,5 +313,57 @@ nav {
     
     .about-Titel {
         text-align: center;
+    }
+    
+    .about-paragraph p {
+        font-size: 0.9rem;
+        color: #5d637b;
+        padding-bottom: 7%;
+    }
+    
+    
+    
+    /* Skills Section Start */
+    .Skills-Section{
+        padding-top: 11%;
+    }
+    
+    .skills-titel{
+        padding-top: 5%;
+    }
+    
+    .Frontend {
+        display: block;
+    }
+    
+    .Frontend-Titel {
+        font-size: 1rem;
+    }
+    
+    .Frontend-Skills {
+        width: 100%;
+        display: flex;
+        padding-bottom: 100%;
+    }
+    
+    .skillimg {
+        margin: 15% auto;
+        width: 20%;
+    }
+    
+    .skillimg img {
+       width: 100%;
+    }
+    
+    .CSSimg {
+        padding-top: 10%;
+    }
+    
+    .JAVASCRIPTimg {
+        padding-top: 20%;
+    }
+    
+    .BOOTSTRAPimg {
+        padding-top: 30%;
     }
 }

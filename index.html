@@ -16,11 +16,11 @@
 <body>
   <nav class="both-side-padding">
     <div class="Nav-list">
-      <a href="#Home">Home</a>
-      <a href="#About">About</a>
-      <a href="#">Skills</a>
-      <a href="#">Resume</a>
-      <a href="#">Contact</a>
+      <a href="#Home" id="Nav-a" class="nav-link" data-target="Home"> Home</a>
+      <a href="#About" id="Nav-a" class="nav-link" data-target="About">About</a>
+      <a href="#Skills" id="Nav-a" class="nav-link" data-target="Skills">Skills</a>
+      <a href="#" id="Nav-a">Resume</a>
+      <a href="#" id="Nav-a">Contact</a>
     </div>
   </nav>
   
@@ -31,21 +31,21 @@
     <section id="Home" class="Intro-section both-side-padding">
       <div class="Intro-Info">
         <P class="Iam">I'm a</P>
-        <p class="secondline">Front-End Web Developer <span class="dot">.</span></p>
+        <p class="my-name">Azhar Shaikh</p>
+        <p class="secondline">Frontend Developer.</p>
       </div>
       
       <div class="My-image">
         <img id="random-image" />
       </div>
-      <div></div>
     </section>
     
-        <!-- About section-->
+    <!-- About section-->
     <section id="About" class="About both-side-padding">
       
       
       <div class="Animeted-gif">
-        <img sizes="" srcset="" src="Public/Coder Gif.gif" alt="">
+        <img src="Public/Coder Gif.gif" alt="Animeted Gif">
       </div>
       
       
@@ -53,28 +53,47 @@
         <h1 class="about-Titel">About Me</h1>
         <div class="about-paragraph">
           
-          <p>I am a passionate Frontend Web Developer eager to launch my career in building engaging, user-friendly digital experiences. With a strong foundation in modern web technologies, I focus on writing clean, efficient code and crafting intuitive interfaces. My attention to detail, problem-solving mindset, and excellent communication skills allow me to collaborate effectively and bring creative ideas to life. I thrive on continuous learning and staying updated with the latest trends in frontend development to deliver high-quality solutions.</p>
+          <p>I'm a passionate Frontend Web Developer ready to kickstart my career in creating engaging and user-friendly digital experiences. With a solid grasp of modern web technologies, I write clean, efficient code and design intuitive interfaces. I bring strong attention to detail, a problem-solving mindset, and clear communication to every project, making collaboration smooth and productive. I'm always eager to learn and stay updated with the latest trends in frontend development to deliver high-quality, modern solutions.</p>
         </div>
       </div>
       </div>
       
     </section>
+    
+    
+    
+    
+    <!-- Skills section -->
+    <section id="Skills" class="Skills-Section both-side-padding">
+      <H1 class="skills-titel">Skills</H1>
+      <div class="Skills-info">
+        
+        <div class="Frontend">
+          <div class="Frontend-Titel">
+            <h1>Frontend</h1>
+          </div>
+          <div class="Frontend-Skills">
+            <div class="HTMLimg skillimg"><img src="Public/Image's/Skills Icon/HTML.png" alt="HTML"></div>
+            
+            <div class="CSSimg skillimg"><img src="Public/Image's/Skills Icon/css.png" alt="CSS"></div>
+            
+            <div class="JAVASCRIPTimg skillimg"><img src="Public/Image's/Skills Icon/JavaScript.png" alt="JavaScript"></div>
+            
+            <div class="BOOTSTRAPimg skillimg"><img src="/Public/Image's/Skills Icon/Bootstrap.png" alt="Bootstrap"></div>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    
+    
   </main>
   
   
   
   <!-- JavaScript -->
   <script>
-    const images = [
-      "Public/Image's/Azhar Shaikh Primary.jpg",
-      "Public/Image's/Azhar Shaikh With Car.jpg",
-      "Public/Image's/Azhar Shaikh With Blue Sky.jpg",
-      "Public/Image's/Azhar Shaikh With Grase.jpg",
-      "Public/Image's/Azhar Shaikh With Tajmahal.jpg",
-      // Add more...
-    ];
-    const randomImage = images[Math.floor(Math.random() * images.length)];
-    document.getElementById("random-image").src = randomImage;
+  
   </script>
   <!-- Project -->
   <script src="main.js"></script>
