@@ -24,6 +24,7 @@
 html {
     scroll-behavior: smooth;
     /* To Make Smooth Scrolling Transition*/
+    font-size: 18px;
 }
 
 body {
@@ -109,6 +110,7 @@ nav {
     height: 100vh;
     display: flex;
     justify-content: space-between;
+    justify-items: space-around;
     padding-top: 7%;
     align-items: center;
     
@@ -198,6 +200,7 @@ nav {
 .about-paragraph {
     font-size: 1rem;
     color: #5d637b;
+    font-size: 1rem;
 }
 
 
@@ -205,8 +208,7 @@ nav {
 
 
 /* Projects Section Start */
-.Projects-section {
-}
+.Projects-section {}
 
 .Project-titel {
     font-family: Bespoke;
@@ -243,24 +245,30 @@ nav {
 
 .Project-no {
     color: #4cb9dc;
+    font-weight: 100;
+    font-size: 1rem;
 }
 
 .Project-name {
     margin: 2% 0px;
+    font-size: 1.25rem;
 }
 
 .Project-discription {
     color: #5d637b;
+    font-size: 1rem;
 }
 
-.Project-live a{
-        color: #C90000;
-    }
+.Project-live a {
+    color: #C90000;
+    font-size: 1rem;
+}
+
 
 
 /* Skills Section Start */
 
-.Skills-Section{
+.Skills-Section {
     height: 100vh;
 }
 
@@ -279,7 +287,7 @@ nav {
 .Frontend-Titel {
     width: 50%;
     font-family: Bespoke;
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .Frontend-Skills {
@@ -320,13 +328,33 @@ nav {
 
 
 
+/* Responsive font-size media queries */
 
+/*
+@media (max-width: 991px) {
+  html {
+    font-size: 14px;
+  }
+}
 
+@media (max-width: 767px) {
+  
+}
+
+@media (max-width: 479px) {
+  html {
+    font-size: 10px;
+  }
+}
+
+*/
 
 
 @media only screen and (max-width: 786px) {
     
-    
+    html {
+        font-size: 14px;
+    }
     
     
     /* Nav Section */
@@ -350,7 +378,7 @@ nav {
         width: 60%;
         height: 100vh;
         display: none;
-        padding-top :  15vh;
+        padding-top: 15vh;
         box-shadow: 0 0 5rem #5d637b;
     }
     
@@ -379,23 +407,21 @@ nav {
     }
     
     .Iam {
-        font-size: 1.25rem;
+        
         font-weight: 900;
         line-height: 7px;
     }
     
-    .my-name {
-        font-size: 2.75rem;
-    }
+    .my-name {}
     
     .secondline {
-        font-size: 1.2rem;
+        
         line-height: 7px;
     }
     
     .My-image {
         width: 100%;
-    
+        
         display: flex;
         justify-content: center;
     }
@@ -435,45 +461,38 @@ nav {
         text-align: center;
     }
     
-    .about-paragraph p {
-        font-size: 0.9rem;
-        padding-bottom: 7%;
-    }
+    .about-paragraph p {}
     
     
     
     
     /* Projects Section Start */
     
-    .Projects-section{
-        
-    }
+    .Projects-section {}
     
     .Project-box {
         display: block;
         margin-bottom: 15%;
     }
     
-    .project2{
+    .project2 {
         display: flex;
         flex-direction: column-reverse;
     }
     
-    .Project-img{
+    .Project-img {
         width: 100%;
     }
     
-    .Project-img img{ 
-        
-    }
+    .Project-img img {}
     
-    .Project-info{
+    .Project-info {
         width: 100%;
     }
     
-    .Project-live{
+    .Project-live {
         margin-bottom: 5%;
-        font-size: 1rem;
+        
     }
     
     
@@ -481,8 +500,7 @@ nav {
     
     
     /* Skills Section Start */
-    .Skills-Section {
-    }
+    .Skills-Section {}
     
     .skills-titel {
         padding-top: 5%;
@@ -492,9 +510,7 @@ nav {
         display: block;
     }
     
-    .Frontend-Titel {
-        font-size: 1rem;
-    }
+    .Frontend-Titel {}
     
     .Frontend-Skills {
         width: 100%;
