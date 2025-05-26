@@ -49,6 +49,7 @@ nav {
     position: fixed;
     box-shadow: 0 0 1.5rem #4cb9dc;
     background: #101630;
+    z-index: 1000;
 }
 
 .hamburger {
@@ -81,12 +82,35 @@ nav {
 
 
 
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.Scroll-animation {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    z-index: 1;
+}
+
+
+
 /* Home section Start */
 .Intro-section {
     display: flex;
     justify-content: space-between;
     padding-top: 7%;
-    padding-bottom: 7%;
+    
+    
 }
 
 .Intro-Info {
@@ -144,6 +168,8 @@ nav {
 .About {
     background: #101630;
     display: flex;
+    height: 100vh;
+    padding-top: 11%;
 }
 
 .Animeted-gif {
@@ -171,13 +197,76 @@ nav {
 
 .about-paragraph {
     font-size: 1rem;
+    color: #5d637b;
 }
 
 
 
+
+
+/* Projects Section Start */
+.Projects-section {
+    
+}
+
+.Project-titel {
+    font-family: Bespoke;
+    font-size: 2rem;
+    margin-bottom: 5%;
+    text-align: center;
+    padding-top: 11%;
+}
+
+.Project-box {
+    display: flex;
+    margin-bottom: 6%;
+    width: 100%;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.Project-img {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.Project-img img {
+    width: 75%;
+    box-shadow: 0 0 3rem #4cb9dc;
+    border-radius: 20px;
+}
+
+.Project-info {
+    width: 60%;
+    padding: 1%;
+}
+
+.Project-no {
+    color: #4cb9dc;
+}
+
+.Project-name {
+    margin: 2% 0px;
+}
+
+.Project-discription {
+    color: #5d637b;
+}
+
+.Project-live a{
+        color: #C90000;
+    }
+
+
 /* Skills Section Start */
 
+.Skills-Section{
+    height: 100vh;
+}
+
 .skills-titel {
+    padding-top: 11%;
     font-family: Bespoke;
     font-size: 2rem;
     margin-bottom: 5%;
@@ -245,9 +334,9 @@ nav {
     .hamburger {
         display: block;
         position: absolute;
-        top: 2%;
+        top: 1rem;
         right: 1rem;
-        z-index: 10;
+        
     }
     
     .Nav-list {
@@ -256,13 +345,14 @@ nav {
         top: 0;
         right: 0;
         background: #101630;
-        flex-direction: row;
-        justify-content: space-around;
-        width: 80%;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        width: 60%;
+        height: 100vh;
         display: none;
-        padding: 1% 15% 1% 5%;
-        box-shadow: 0 0 2rem #4cb9dc;
-        
+        padding-top :  15vh;
+        box-shadow: 0 0 5rem #5d637b;
     }
     
     .Nav-list.show {
@@ -343,15 +433,51 @@ nav {
     
     .about-paragraph p {
         font-size: 0.9rem;
-        color: #5d637b;
         padding-bottom: 7%;
     }
     
     
     
+    
+    /* Projects Section Start */
+    
+    .Projects-section{
+        
+    }
+    
+    .Project-box {
+        display: block;
+        margin-bottom: 15%;
+    }
+    
+    .project2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .Project-img{
+        width: 100%;
+    }
+    
+    .Project-img img{ 
+        
+    }
+    
+    .Project-info{
+        width: 100%;
+    }
+    
+    .Project-live{
+        margin-bottom: 5%;
+        font-size: 1rem;
+    }
+    
+    
+    
+    
+    
     /* Skills Section Start */
     .Skills-Section {
-        padding-top: 11%;
     }
     
     .skills-titel {
@@ -369,7 +495,6 @@ nav {
     .Frontend-Skills {
         width: 100%;
         display: flex;
-        padding-bottom: 100%;
     }
     
     .skillimg {
