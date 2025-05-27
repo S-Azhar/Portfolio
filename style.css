@@ -111,7 +111,6 @@ nav {
     display: flex;
     justify-content: space-between;
     justify-items: space-around;
-    padding-top: 7%;
     align-items: center;
     
     
@@ -132,7 +131,7 @@ nav {
 .my-name {
     font-family: Bespoke;
     font-weight: 900;
-    font-size: 3.5rem;
+    font-size: 3.46rem;
 }
 
 .secondline {
