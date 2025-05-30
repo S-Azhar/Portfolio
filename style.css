@@ -135,7 +135,7 @@ nav {
 }
 
 .Iam {
-    font-size: 1.25rem;
+    font-size: 1.5rem;
     color: #5d637b;
     font-family: Bespoke;
     font-weight: 700;
@@ -144,11 +144,11 @@ nav {
 .my-name {
     font-family: Bespoke;
     font-weight: 900;
-    font-size: 3.46rem;
+    font-size: 3.55rem;
 }
 
 .secondline {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #fff;
     font-weight: 700;
     font-family: Bespoke, serif;
@@ -538,12 +538,16 @@ footer {
     }
     
     .Iam {
-        
         font-weight: 900;
-        
     }
     
-    .secondline {}
+    .my-name{
+        font-size: 3.46rem;
+    }
+    
+    .secondline {
+        font-size: 1.75rem;
+    }
     
     .My-image {
         width: 100%;
@@ -624,7 +628,6 @@ footer {
     
     .Project-live {
         margin-bottom: 5%;
-        
     }
     
 }
@@ -664,12 +667,14 @@ footer {
     }
     
     .Animeted-gif {
-        height: 70%;
+        width: 40%;
+        display: flex;
+        justify-content: center;
     }
     
     .Animeted-gif img {
-        width: 70%;
-        height: 70%;
+        width: 80%;
+        height: 80%;
     }
     
     .about-Titel {
