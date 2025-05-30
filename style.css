@@ -33,13 +33,53 @@ body {
     font-family: Ranade;
 }
 
+/* Website Both Sides Space */
+.both-side-padding {
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
 a {
     text-decoration: none;
 }
 
-.both-side-padding {
-    padding-right: 5%;
-    padding-left: 5%;
+
+/* SCROLLING ANIMATION  */
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        scale: 0.5;
+    }
+    
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+/* ANIMATION Version 1 */
+.Scroll-animation {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+    z-index: 1;
+}
+
+/* ANIMATION Version 2 */
+.Scroll-animation2 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+    z-index: 1;
+}
+
+/* ANIMATION Version 3 */
+.Scroll-animation3 {
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 10%;
+    z-index: 1;
 }
 
 
@@ -48,9 +88,10 @@ a {
 nav {
     width: 90%;
     position: fixed;
-    box-shadow: 0 0 1.5rem #4cb9dc;
-    background: #101630;
-    z-index: 1000;
+    box-shadow: 0 0 1rem #4cb9dc;
+    background: #1016309C;
+    z-index: 2; /* prevent overflow elements*/
+    backdrop-filter: blur(10px);
 }
 
 .hamburger {
@@ -64,8 +105,6 @@ nav {
 .Nav-list {
     display: flex;
     justify-content: flex-end;
-    padding-top: 1%;
-    padding-bottom: 1%;
 }
 
 .Nav-list a {
@@ -83,37 +122,12 @@ nav {
 
 
 
-
-@keyframes appear {
-    from {
-        opacity: 0;
-        scale: 0.5;
-    }
-    
-    to {
-        opacity: 1;
-        scale: 1;
-    }
-}
-
-.Scroll-animation {
-    animation: appear linear;
-    animation-timeline: view();
-    animation-range: entry 0% cover 40%;
-    z-index: 1;
-}
-
-
-
 /* Home section Start */
 .Intro-section {
     height: 100vh;
     display: flex;
     justify-content: space-between;
-    justify-items: space-around;
     align-items: center;
-    
-    
 }
 
 .Intro-Info {
@@ -124,8 +138,7 @@ nav {
     font-size: 1.25rem;
     color: #5d637b;
     font-family: Bespoke;
-    font-weight: 500;
-    line-height: 5px;
+    font-weight: 700;
 }
 
 .my-name {
@@ -138,8 +151,7 @@ nav {
     font-size: 1.5rem;
     color: #fff;
     font-weight: 700;
-    font-family: Bespoke, Book Antiqua, Palatino, Palatino Linotype, Palatino LT STD, Georgia, serif;
-    line-height: 5px;
+    font-family: Bespoke, serif;
     text-decoration: underline 2px #4cb9dc;
 }
 
@@ -154,13 +166,15 @@ nav {
     width: 90%;
     height: 90%;
     border-radius: 25% 75% 41% 59% / 62% 32% 68% 38%;
-    transition: width 0.5s ease-in-out;
-    box-shadow: 0 0 3rem #4cb9dc;
+    transition: 2s ease;
+    box-shadow: 0 0 2rem #4cb9dc;
     /* write 0, 0, to show shadow all side of img & elements*/
 }
 
-#random-image:hover {
-    border: 63% 37% 65% 35% / 32% 58% 42% 68%;
+.My-image img:hover {
+    border-radius: 63% 37% 65% 35% / 32% 58% 42% 68%;
+    box-shadow: 0 0 3rem #4cb9dc;
+    transform: scale(1.1);
 }
 
 
@@ -170,9 +184,9 @@ nav {
 .About {
     background: #101630;
     display: flex;
-    height: 80vh;
-    margin-bottom: 20vh;
+    
     padding-top: 11%;
+    margin-bottom: 11%;
 }
 
 .Animeted-gif {
@@ -181,8 +195,13 @@ nav {
 
 .Animeted-gif img {
     width: 100%;
-    box-shadow: 0 0 3rem #4cb9dc;
+    box-shadow: 0 0 1.5rem #4cb9dc;
     border-radius: 5%;
+    transition: 0.5s linear;
+}
+
+.Animeted-gif img:hover{
+    box-shadow: 0 0 3rem #4cb9dc;
 }
 
 .About-info {
@@ -201,6 +220,111 @@ nav {
     color: #5d637b;
     font-size: 1rem;
 }
+
+
+
+
+
+
+/* Education Section Start */
+
+.Education-section {}
+
+.Education-titel {
+    font-family: Bespoke;
+    font-size: 2rem;
+    padding-top: 11%;
+    text-align: center;
+}
+
+
+.education-box {
+    background: #5D637B40;
+    padding: 1rem;
+    border-radius: 10px;
+    display: flex;
+    margin: 5% 0px;
+    box-shadow: 0 0 0.5rem #4cb9dc;
+    transition: 0.5s linear;
+}
+
+.education-box:hover{
+    box-shadow: 0 0 1.5rem #4cb9dc;
+}
+
+.education {
+    border-left: 0.25rem solid #4cb9dc;
+    padding-left: 0.5rem;
+}
+
+.college{
+    color: #5d637b;
+}
+
+
+
+
+
+
+/* Skills Section Start */
+
+.Skills-Section {}
+
+.Skills-titel {
+    font-family: Bespoke;
+    font-size: 2.25rem;
+    text-align: center;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    
+}
+
+.column {
+    width: 100%;
+}
+
+h2 {
+    color: #4cb9dc;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-left: 0.25rem solid #4cb9dc;
+    padding-left: 0.5rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.8rem;
+    margin-right: 0.8rem;
+    font-size: 2rem;
+    background: #5D637B40;
+    border-radius: 10px;
+    transition: 0.3s linear;
+}
+
+li:hover{
+    box-shadow: 0 0 0.75rem #4cb9dc;
+}
+
+li img {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.5rem;
+}
+
 
 
 
@@ -233,8 +357,13 @@ nav {
 
 .Project-img img {
     width: 75%;
-    box-shadow: 0 0 3rem #4cb9dc;
+    box-shadow: 0 0 1.5rem #4cb9dc;
     border-radius: 20px;
+    transition: 0.5s linear;
+}
+
+.Project-img img:hover{
+    box-shadow: 0 0 3rem #4cb9dc;
 }
 
 .Project-info {
@@ -264,57 +393,59 @@ nav {
 }
 
 
-
-/* Skills Section Start */
-
-.Skills-Section {
-    height: 100vh;
-}
-
-.skills-titel {
-    padding-top: 11%;
+.Contact-titel {
     font-family: Bespoke;
     font-size: 2rem;
     margin-bottom: 5%;
     text-align: center;
 }
 
-.Frontend {
+
+.contact {
     display: flex;
+    justify-content: center;
 }
 
-.Frontend-Titel {
-    width: 50%;
-    font-family: Bespoke;
+.icon {
+    height: 50px;
+    width: 50px;
+    background: #5D637B40;
+    margin: 5%;
+    border-radius: 50%;
+    transition: all 0.3s linear;
+}
+
+.icon:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem #4cb9dc;
+}
+
+.icon a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ccc;
+    height: 100%;
+}
+
+.icon a i{
     font-size: 2rem;
 }
 
-.Frontend-Skills {
-    width: 50%;
-    display: flex;
+.icon a i:hover {
+    color: #fff;
 }
 
-.skillimg {
-    width: 15%;
-    height: 15%;
-    margin: 0px auto;
-}
 
-.skillimg img {
+
+
+footer {
+    background: #42445A;
     width: 100%;
+    text-align: center;
 }
 
-.CSSimg {
-    margin-top: 10%;
-}
 
-.JAVASCRIPTimg {
-    margin-top: 20%;
-}
-
-.BOOTSTRAPimg {
-    margin-top: 30%;
-}
 
 
 
@@ -362,15 +493,13 @@ nav {
         position: absolute;
         top: 1rem;
         right: 1rem;
-        
     }
     
     .Nav-list {
         display: flex;
         position: absolute;
         top: 0;
-        right: 0;
-        background: #101630;
+        right: 300px;
         flex-direction: column;
         justify-content: flex-start;
         align-items: center;
@@ -378,11 +507,15 @@ nav {
         height: 100vh;
         display: none;
         padding-top: 15vh;
-        box-shadow: 0 0 5rem #5d637b;
+        
+        background: #101630;
+        transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
     }
     
     .Nav-list.show {
         display: flex;
+        right: 0px;
+        opacity: 1;
     }
     
     .Nav-list a {
@@ -395,8 +528,7 @@ nav {
     
     /* Home Section */
     .Intro-section {
-        display: flex;
-        flex-direction: column;
+        flex-wrap: wrap;
         justify-content: space-around;
         padding-top: 0%;
     }
@@ -408,19 +540,13 @@ nav {
     .Iam {
         
         font-weight: 900;
-        line-height: 7px;
-    }
-    
-    .my-name {}
-    
-    .secondline {
         
-        line-height: 7px;
     }
+    
+    .secondline {}
     
     .My-image {
         width: 100%;
-        
         display: flex;
         justify-content: center;
     }
@@ -436,7 +562,7 @@ nav {
     /* About Section */
     .About {
         padding-top: 11%;
-        display: block;
+        flex-wrap: wrap;
     }
     
     .Animeted-gif {
@@ -457,10 +583,16 @@ nav {
     }
     
     .about-Titel {
+        margin: 5% 0;
         text-align: center;
     }
     
-    .about-paragraph p {}
+    
+    
+    
+    
+    
+    /* Skills Section Start */
     
     
     
@@ -470,13 +602,14 @@ nav {
     .Projects-section {}
     
     .Project-box {
-        display: block;
+        flex-wrap: wrap;
         margin-bottom: 15%;
     }
     
     .project2 {
         display: flex;
         flex-direction: column-reverse;
+        margin-bottom: 15%;
     }
     
     .Project-img {
@@ -494,47 +627,67 @@ nav {
         
     }
     
-    
-    
-    
-    
-    /* Skills Section Start */
-    .Skills-Section {}
-    
-    .skills-titel {
-        padding-top: 5%;
+}
+
+@media (orientation:landscape) {
+    html {
+        font-size: 12px;
     }
     
-    .Frontend {
-        display: block;
+    .Nav-list a {
+        margin-top: 2%;
+        margin-bottom: 2%;
     }
     
-    .Frontend-Titel {}
     
-    .Frontend-Skills {
-        width: 100%;
+    
+    .Intro-section {
         display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-around;
     }
     
-    .skillimg {
-        margin: 15% auto;
-        width: 20%;
+    .Intro-Info {
+        width: 50%;
     }
     
-    .skillimg img {
-        width: 100%;
+    .My-image {
+        width: 35%;
+        position: static;
     }
     
-    .CSSimg {
-        padding-top: 10%;
+    
+    
+    .About {
+        flex-wrap: nowrap;
+        align-items: center;
     }
     
-    .JAVASCRIPTimg {
-        padding-top: 20%;
+    .Animeted-gif {
+        height: 70%;
     }
     
-    .BOOTSTRAPimg {
-        padding-top: 30%;
+    .Animeted-gif img {
+        width: 70%;
+        height: 70%;
     }
     
+    .about-Titel {
+        margin: 0;
+        margin-bottom: 5%;
+    }
+    
+    
+    
+    .education-box {
+        margin: 2% 0;
+    }
+    
+    .Project-box {
+        flex-wrap: nowrap;
+    }
+    
+    .project2 {
+        flex-direction: row;
+    }
 }

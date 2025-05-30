@@ -43,13 +43,13 @@ window.onload = function() {
   
   menuToggle.onclick = toggleMenu;
   
-  // Close navbar when clicking outside
- // document.addEventListener("click", function(e) {
-//    if (!navbar.contains(e.target)) {
-//      navList.classList.remove("show");
-    //  menuToggle.textContent = "☰";
- //   }
-//  });
+ // Close navbar when clicking outside
+  document.addEventListener("click", function(e) {
+    if (!navbar.contains(e.target)) {
+      navList.classList.remove("show");
+      menuToggle.textContent = "☰";
+    }
+  });
   
   // Smooth scroll navigation
   document.querySelectorAll('.nav-link').forEach(link => {

@@ -9,6 +9,8 @@
   <meta name="theme-color" content="#111731">
   <title>Azhar Portfolio</title>
   
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
   <!-- Custom Styles -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -16,11 +18,12 @@
 <body>
   <nav class="both-side-padding" id="navbar">
     <div class="hamburger" id="menu-toggle">☰</div>
+    
     <div class="Nav-list" id="Nav-list">
       <a href="#Home" id="Nav-a" class="nav-link" data-target="Home">Home</a>
       <a href="#About" id="Nav-a" class="nav-link" data-target="About">About</a>
+      <a href="#Education" id="Nav-a" class="nav-link" data-target="Education">Education</a>
       <a href="#Projects" id="Nav-a" class="nav-link" data-target="Projects">Projects</a>
-      <a href="#Skills" id="Nav-a" class="nav-link" data-target="Skills">Skills</a>
     </div>
   </nav>
   
@@ -61,8 +64,56 @@
     
     
     
-      <!-- Projects Section -->
-
+    <!-- Education section -->
+    <section id="Education" class="Education-section both-side-padding">
+      <div class="education-section">
+        <H1 class="Education-titel Scroll-animation">Education</H1>
+        
+        <div class="education-box Scroll-animation">
+          <div class="education">
+            <p>2021 - 2024</p>
+            <h3>Bachlor In Computer Application</h3>
+            <p class="college">Dayanand College Of Commerce, Latur</p>
+          </div>
+        </div>
+        
+        
+        <div class="education-box Scroll-animation">
+          
+          <div class="education">
+            <p>2019 - 2021</p>
+            <h3>HSC - Higher Secondary College</h3>
+            <p class="college">HP Urdu Science Junior College, Latur</p>
+          </div>
+        </div>
+    </section>
+    
+    
+    
+    <!-- Skills section -->
+    <section id="Skills" class="Skills both-side-padding">
+      <h1 class="Skills-titel Scroll-animation">Skills</h1>
+      <div class="skills-container">
+        <div class="column Scroll-animation">
+          <h2>FRONTEND</h2>
+          <ul class="Scroll-animation">
+            
+            <li><img src="Public/Image's/Skills Icon/HTML.png" />HTML5</li>
+            <li><img src="Public/Image's/Skills Icon/css.png" />CSS</li>
+            <li><img src="Public/Image's/Skills Icon/JavaScript.png" />JavaScript</li>
+            <li><img src="Public/Image's/Skills Icon/Bootstrap.png" />Bootstrap</li>
+            
+          </ul>
+        </div>
+      </div>
+      
+    </section>
+    
+    
+    
+    
+    <!-- Projects Section -->
+    
     <section id="Projects" class="Projects-section both-side-padding">
       
       <H1 class="Project-titel Scroll-animation">Projects</H1>
@@ -73,7 +124,7 @@
           <div class="Project-name">
             <h4>My Personal Portfolio Website</h4>
           </div>
-          <div class="Project-discription">I created a fully responsive personal portfolio website using HTML, CSS, and JavaScript. It showcases my skills, projects, and contact details in a clean, modern layout. This site helps highlight my web development journey and serves as an online resume. 
+          <div class="Project-discription">I created a fully responsive personal portfolio website using HTML, CSS, and JavaScript. It showcases my skills, projects, and contact details in a clean, modern layout. This site helps highlight my web development journey and serves as an online resume.
           </div>
           <div class="Project-live">
             <a href="">Live Demo</a>
@@ -88,51 +139,52 @@
       
       
       <div class="project2 Project-box">
-        <div class="Project-img Scroll-animation">
+        <div class="Project-img Scroll-animation2">
           <img src="Public/Image's/Projects Image/Wow Food Project Image.png" alt="">
         </div>
-        <div class="Project-info Scroll-animation">
+        <div class="Project-info Scroll-animation2">
           <div class="Project-no">PROJECT 2</div>
           <div class="Project-name">
             <h4>Restaurant Website Landing Page</h4>
           </div>
           <div class="Project-discription">
             I created a fully responsive restaurant website landing page using HTML and CSS. This project is a clone of a modern restaurant site, designed to showcase menus, ambiance, and customer experience.
-          
+            
           </div>
           <div class="Project-live">
             <a href="">Live Demo</a>
           </div>
         </div>
       </div>
+      
+      
+    </section>
+    
+    <section class="contact-section both-side-padding">
+      <h1 class="Contact-titel Scroll-animation2">Contact Me</h1>
+      
+      <div class="contact">
+        
+        <div class="icon Scroll-animation3">
+          <a href="https://www.linkedin.com/in/azhar-shaikh"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+        
+        <div class="icon Scroll-animation3">
+          <a href="https://x.com/AZHARSHAIKH04?t=0Xvq4uofFLwdQD77tRxWvw&s=09"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+        
+        <div class="icon Scroll-animation3">
+          <a href="mailto:shaikhazhar.as0@gmail.com?subject=Hello&body=I%20saw%20your%20portfolio..."><i class="fa-solid fa-envelope"></i></a>
+        </div>
+        
       </div>
       
     </section>
     
-    
-    <!-- Skills section -->
-    <section id="Skills" class="Skills-Section both-side-padding">
-      <H1 class="skills-titel Scroll-animation">Skills</H1>
-      <div class="Skills-info">
-        
-        <div class="Frontend">
-          <div class="Frontend-Titel Scroll-animation">
-            <h1>Frontend</h1>
-          </div>
-          <div class="Frontend-Skills Scroll-animation">
-            <div class="HTMLimg skillimg"><img src="Public/Image's/Skills Icon/HTML.png" alt="HTML"></div>
-            
-            <div class="CSSimg skillimg"><img src="Public/Image's/Skills Icon/css.png" alt="CSS"></div>
-            
-            <div class="JAVASCRIPTimg skillimg"><img src="Public/Image's/Skills Icon/JavaScript.png" alt="JavaScript"></div>
-            
-            <div class="BOOTSTRAPimg skillimg"><img src="Public/Image's/Skills Icon/Bootstrap.png" alt="Bootstrap"></div>
-          </div>
-        </div>
-        
-      </div>
-    </section>
-    
+    <footer>
+      <p> Mead With &#x2665;&#xfe0f; By Me.</p>
+      <p> &#169; 2025 Azhar Shaikh. All rights reserved.</p>
+    </footer>
     
   </main>
   
