@@ -4,12 +4,6 @@
     Shadow       #4cb9dc    */
 
 
-/* Heading Font Style */
-@font-face {
-    font-family: Bespoke;
-    src: url(Public/Fonts/BespokeStencil-Variable.ttf);
-}
-
 /* Normal Font Style */
 @font-face {
     font-family: Ranade;
@@ -136,23 +130,26 @@ nav {
 }
 
 .Iam {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: #5d637b;
-    font-family: Bespoke;
-    font-weight: 700;
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    line-height: 1.5rem;
 }
 
 .my-name {
-    font-family: Bespoke;
+    font-family: "Kanit", sans-serif;
     font-weight: 900;
     font-size: 3.55rem;
+    line-height: 2.85rem;
 }
 
 .secondline {
     font-size: 2rem;
     color: #fff;
-    font-weight: 700;
-    font-family: Bespoke, serif;
+    font-weight: 500;
+    line-height: 2rem;
+    font-family: "Kanit", sans-serif;
     text-decoration: underline 2px #4cb9dc;
 }
 
@@ -210,7 +207,7 @@ nav {
 }
 
 .about-Titel {
-    font-family: Bespoke;
+    font-family: "Kanit", sans-serif;
     font-size: 2rem;
     margin-bottom: 5%;
 }
@@ -226,7 +223,7 @@ nav {
 
 /* Education Section Start */
 .Education-titel {
-    font-family: Bespoke;
+    font-family: "Kanit", sans-serif;
     font-size: 2rem;
     padding-top: 11%;
     text-align: center;
@@ -260,7 +257,7 @@ nav {
 
 /* Skills Section Start */
 .Skills-titel {
-    font-family: Bespoke;
+    font-family: "Kanit", sans-serif;
     font-size: 2.25rem;
     text-align: center;
     margin-top: 7%;
@@ -317,7 +314,7 @@ li img {
 
 /* Projects Section Start */
 .Project-titel {
-    font-family: Bespoke;
+    font-family: "Kanit", sans-serif;
     font-size: 2rem;
     margin-bottom: 5%;
     text-align: center;
@@ -379,7 +376,7 @@ li img {
 
 /* Contact Section */
 .Contact-titel {
-    font-family: Bespoke;
+    font-family: "Kanit", sans-serif;
     font-size: 2rem;
     margin-bottom: 5%;
     text-align: center;
@@ -481,13 +478,13 @@ footer {
         display: none;
         padding-top: 15vh;
         background: #101630;
-        transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
     }
     
     .Nav-list.show {
         display: flex;
         right: 0px;
         opacity: 1;
+        transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
     }
     
     .Nav-list a {
