@@ -32,7 +32,7 @@
 
 ---
 
-## [1.2.0] - 2025-05-31
+## [1.2.1] - 2025-05-31
 ### Added
 - README File For Developer
 - Projects links added

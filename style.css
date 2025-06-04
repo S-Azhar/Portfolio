@@ -134,21 +134,21 @@ nav {
     color: #5d637b;
     font-family: "Kanit", sans-serif;
     font-weight: 500;
-    line-height: 1.5rem;
+    line-height: 1;
 }
 
 .my-name {
     font-family: "Kanit", sans-serif;
     font-weight: 900;
     font-size: 3.55rem;
-    line-height: 2.85rem;
+    line-height: 1;
 }
 
 .secondline {
     font-size: 2rem;
     color: #fff;
     font-weight: 500;
-    line-height: 2rem;
+    line-height: 1;
     font-family: "Kanit", sans-serif;
     text-decoration: underline 2px #4cb9dc;
 }
@@ -447,6 +447,10 @@ footer {
     html {
         font-size: 10px;
     }
+    
+    .My-image{
+        position: static;
+    }
 }
 
 
@@ -507,7 +511,7 @@ footer {
     }
     
     .Iam {
-        font-weight: 900;
+        font-weight: 700;
     }
     
     .my-name {
