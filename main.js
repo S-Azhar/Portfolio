@@ -7,7 +7,6 @@ console.log('Hello World!');
 const images = [
   "Public/Image's/Azhar Shaikh Primary.jpg",
   "Public/Image's/Azhar Shaikh With Car.jpg",
-  "Public/Image's/Azhar Shaikh With Blue Sky.jpg",
   "Public/Image's/Azhar Shaikh With Grase.jpg",
   "Public/Image's/Azhar Shaikh With Tajmahal.jpg"
 ];

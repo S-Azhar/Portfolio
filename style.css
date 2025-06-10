@@ -15,16 +15,14 @@
     padding: 0px;
 }
 
-html {
+html, body {
     scroll-behavior: smooth;
     /* To Make Smooth Scrolling Transition*/
     font-size: 18px;
-}
-
-body {
     background: #101630;
     color: #fff;
     font-family: Ranade;
+    overflow-x: hidden;
 }
 
 /* Website Both Sides Space */
@@ -53,14 +51,14 @@ a {
 }
 
 /* ANIMATION Version 1 */
-.Scroll-animation {
+/* .Scroll-animation {
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40%;
     z-index: 1;
 }
 
-/* ANIMATION Version 2 */
+
 .Scroll-animation2 {
     animation: appear linear;
     animation-timeline: view();
@@ -68,13 +66,13 @@ a {
     z-index: 1;
 }
 
-/* ANIMATION Version 3 */
+
 .Scroll-animation3 {
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 10%;
     z-index: 1;
-}
+} */
 
 
 
@@ -100,11 +98,11 @@ nav {
 .Nav-list {
     display: flex;
     justify-content: flex-end;
+    gap: 3rem;
 }
 
 .Nav-list a {
     font-size: 1.5rem;
-    margin-left: 3rem;
     color: #fff;
     font-weight: 900;
 }
@@ -145,13 +143,25 @@ nav {
 }
 
 .secondline {
-    font-size: 2rem;
-    color: #fff;
-    font-weight: 500;
-    line-height: 1;
-    font-family: "Kanit", sans-serif;
-    text-decoration: underline 2px #4cb9dc;
+  font-size: 2rem;
+  color:  #4cb9dc;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Kanit", sans-serif;
+  overflow: hidden;
+  white-space: nowrap;
+  width: 0;
+  animation: typing 3s steps(22, end) 0.5s infinite alternate;
 }
+
+@keyframes typing {
+  from { width: 0  }
+  to { width: 20ch } /* adjust ch based on text length */
+}
+
+
+
+
 
 .My-image {
     width: 45%;
@@ -161,18 +171,11 @@ nav {
 }
 
 .My-image img {
-    width: 90%;
-    height: 90%;
-    border-radius: 25% 75% 41% 59% / 62% 32% 68% 38%;
-    transition: 2s ease;
-    box-shadow: 0 0 2rem #4cb9dc;
+    width: 100%;
+    height: 100%;
+    border-radius: 51% 49% 50% 50% / 30% 30% 70% 70%;
+    box-shadow: 0 0 10rem #4cb9dc;
     /* write 0, 0, to show shadow all side of img & elements*/
-}
-
-.My-image img:hover {
-    border-radius: 63% 37% 65% 35% / 32% 58% 42% 68%;
-    box-shadow: 0 0 3rem #4cb9dc;
-    transform: scale(1.1);
 }
 
 
@@ -247,6 +250,12 @@ nav {
     border-left: 0.25rem solid #4cb9dc;
     padding-left: 0.5rem;
 }
+
+.education p, h3 {
+    font-size: 1.1rem;
+}
+
+
 
 .college {
     color: #5d637b;
@@ -481,7 +490,7 @@ footer {
         height: 100vh;
         display: none;
         padding-top: 15vh;
-        background: #101630;
+        
     }
     
     .Nav-list.show {
@@ -489,6 +498,7 @@ footer {
         right: 0px;
         opacity: 1;
         transition: right 0.3s ease-in-out, opacity 0.3s ease-in-out;
+        background: #101630
     }
     
     .Nav-list a {

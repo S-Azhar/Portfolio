@@ -29,13 +29,16 @@
 ## [Unreleased]
 ### Added
 - [Contact Form in progress...]
+- working on GSAP 
+
 
 ---
 
-## [1.2.1] - 2025-05-31
+## [1.3.0] - 2025-05-31
 ### Added
 - README File For Developer
 - Projects links added
+- implementation of GSAP
 
 ### Fixed
 - Responsive issues
