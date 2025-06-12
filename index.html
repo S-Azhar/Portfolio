@@ -23,16 +23,21 @@
 </head>
 
 <body>
-  <nav class="both-side-padding" id="navbar">
-    <div class="hamburger" id="menu-toggle">☰</div>
-    
-    <div class="Nav-list" id="Nav-list">
-      <a href="#Home" id="Nav-a" class="nav-link" data-target="Home">Home</a>
-      <a href="#About" id="Nav-a" class="nav-link" data-target="About">About</a>
-      <a href="#Education" id="Nav-a" class="nav-link" data-target="Education">Education</a>
-      <a href="#Projects" id="Nav-a" class="nav-link" data-target="Projects">Projects</a>
-    </div>
-  </nav>
+  <nav class="navbar">
+        <div class="navbar-container">
+            <button class="navbar-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+            <ul class="navbar-menu">
+                <li><a href="#Home" class="active nav-link" data-target="Home">Home</a></li>
+                <li><a href="#About" class="nav-link" data-target="About">About</a></li>
+                <li><a href="#Education" class="nav-link" data-target="Education">Education</a></li>
+                <li><a href="#Project" class="nav-link" data-target="Project" >Project</a></li>
+            </ul>
+        </div>
+    </nav>
   
   
   
@@ -79,7 +84,7 @@
       <div class="education-section">
         <H1 class="Education-titel Scroll-animation">Education</H1>
         
-        <div class="education-box Scroll-animation">
+        <div id="education-box1" class="education-box Scroll-animation">
           <div class="education">
             <p>2021 - 2024</p>
             <h3>Bachlor In Computer Application</h3>
@@ -87,7 +92,7 @@
           </div>
         </div>
         
-        <div class="education-box Scroll-animation">
+        <div id="education-box2" class="education-box Scroll-animation">
           <div class="education">
             <p>2019 - 2021</p>
             <h3>HSC - Higher Secondary College</h3>
@@ -105,9 +110,9 @@
       <h1 class="Skills-titel Scroll-animation">Skills</h1>
       
       <div class="skills-container">
-        <div class="column Scroll-animation">
+        <div class="column">
           <h2>FRONTEND</h2>
-          <ul class="Scroll-animation">
+          <ul class="skills-collection">
             
             <li><img src="Public/Image's/Skills Icon/HTML.png" alt="HTML5 Images" />HTML5</li>
             <li><img src="Public/Image's/Skills Icon/css.png" alt="CSS image" />CSS</li>
@@ -125,11 +130,11 @@
     
     <!-- Projects Section -->
     
-    <section id="Projects" class="Projects-section both-side-padding">
+    <section id="Project" class="Projects-section both-side-padding">
       
       <H1 class="Project-titel Scroll-animation">Projects</H1>
       
-      <div class="Project-box">
+      <div id="project1" class="Project-box">
         <div class="Project-info Scroll-animation">
           <div class="Project-no">PROJECT 1</div>
           <div class="Project-name">
@@ -148,7 +153,7 @@
       </div>
       
       
-      <div class="project2 Project-box">
+      <div id="project2" class="project2 Project-box">
         <div class="Project-img Scroll-animation2">
           <img src="Public/Image's/Projects Image/Wow Food Project Image.png" alt="Restaurant Website Images">
         </div>

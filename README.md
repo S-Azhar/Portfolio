@@ -1,6 +1,6 @@
 ## 🚀  MY PORTFOLIO WEBSITE 
 
-**Version:** `1.2.0`  
+**Version:** `1.4.0`  
 **Live Demo:** [PORTFOLIO](https://s-azhar.github.io/Portfolio/)  
 **Last Updated:** `2025-05-30`  
 
@@ -34,11 +34,12 @@
 
 ---
 
-## [1.3.0] - 2025-05-31
+## [1.4.0] - 2025-05-31
 ### Added
 - README File For Developer
 - Projects links added
 - implementation of GSAP
+- Gsap animation allmost added 
 
 ### Fixed
 - Responsive issues

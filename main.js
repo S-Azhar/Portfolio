@@ -1,6 +1,18 @@
 // Show "Hello World!" in the console
 console.log('Hello World!');
 
+// Nav bar
+const navbarToggle = document.querySelector('.navbar-toggle');
+const navbarMenu = document.querySelector('.navbar-menu');
+
+navbarToggle.addEventListener('click', () => {
+    navbarToggle.classList.toggle('active');
+    navbarMenu.classList.toggle('active');
+});
+
+
+
+
 
 
 // Array of image paths (make sure file names and folders are correct)
@@ -30,37 +42,5 @@ document.querySelectorAll('.nav-link').forEach(link => {
 });
 
 
-window.onload = function() {
-  const navList = document.getElementById("Nav-list");
-  const menuToggle = document.getElementById("menu-toggle");
-  const navbar = document.getElementById("navbar");
+
   
-  function toggleMenu() {
-    navList.classList.toggle("show");
-    menuToggle.textContent = navList.classList.contains("show") ? "✖" : "☰";
-  }
-  
-  menuToggle.onclick = toggleMenu;
-  
- // Close navbar when clicking outside
-  document.addEventListener("click", function(e) {
-    if (!navbar.contains(e.target)) {
-      navList.classList.remove("show");
-      menuToggle.textContent = "☰";
-    }
-  });
-  
-  // Smooth scroll navigation
-  document.querySelectorAll('.nav-link').forEach(link => {
-    link.addEventListener('click', function(e) {
-      e.preventDefault();
-      const targetId = this.getAttribute('data-target');
-      const target = document.getElementById(targetId);
-      if (target) {
-        target.scrollIntoView({ behavior: 'smooth' });
-      }
-      navList.classList.remove("show");
-      menuToggle.textContent = "☰";
-    });
-  });
-};
