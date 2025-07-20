@@ -1,4 +1,4 @@
-// Show "Hello World!" in the console
+
 console.log('Hello World!');
 
 // Nav bar
@@ -14,7 +14,6 @@ navbarToggle.addEventListener('click', () => {
 
 
 
-
 // Array of image paths (make sure file names and folders are correct)
 const images = [
   "Public/Image's/Azhar Shaikh Primary.jpg",
@@ -23,7 +22,6 @@ const images = [
   "Public/Image's/Azhar Shaikh With Tajmahal.jpg"
 ];
 
-// Pick a random image from the array
 const randomImage = images[Math.floor(Math.random() * images.length)];
 
 // Set the image source to the random image
